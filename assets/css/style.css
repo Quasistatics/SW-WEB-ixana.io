@@ -3014,8 +3014,9 @@ section {
   padding: 10px 28px;
   border-radius: 4px;
   transition: 0.5s;
-  color: var(--color-white);
-  background: var(--color-primary);
+  color: var(--color-black);
+  /* background: var(--color-primary); */
+  background: var(--color-primary-turquoise);
   font-family: var(--font-secondary);
 }
 
