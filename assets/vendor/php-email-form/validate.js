@@ -21,9 +21,12 @@
         displayError(thisForm, "The form action property is not set!");
         return;
       }
-      thisForm.querySelector(".loading").classList.add("d-block");
-      thisForm.querySelector(".error-message").classList.remove("d-block");
-      thisForm.querySelector(".sent-message").classList.remove("d-block");
+
+      if (thisForm.querySelector(".loading")) {
+        thisForm.querySelector(".loading").classList.add("d-block");
+        thisForm.querySelector(".error-message").classList.remove("d-block");
+        thisForm.querySelector(".sent-message").classList.remove("d-block");
+      }
 
       let formData = new FormData(thisForm);
 
@@ -62,17 +65,21 @@
         return response.json();
       })
       .then((data) => {
-        thisForm.querySelector(".loading").classList.remove("d-block");
-        if (data.created == 1) {
-          thisForm.querySelector(".sent-message").classList.add("d-block");
-          thisForm.reset();
+        if (thisForm.querySelector(".loading")) {
+          thisForm.querySelector(".loading").classList.remove("d-block");
+          if (data.created == 1) {
+            thisForm.querySelector(".sent-message").classList.add("d-block");
+            thisForm.reset();
+          } else {
+            throw new Error(
+              data
+                ? data
+                : "Form submission failed and no error message returned from: " +
+                  action
+            );
+          }
         } else {
-          throw new Error(
-            data
-              ? data
-              : "Form submission failed and no error message returned from: " +
-                action
-          );
+          alert("Subscribed!");
         }
       })
       .catch((error) => {

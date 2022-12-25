@@ -1,6 +1,8 @@
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Barlow", sans-serif;
   --font-secondary: "Poppins", sans-serif;
 }
@@ -11,19 +13,19 @@
   --color-primary: #e96b56;
   --color-secondary: #f85a40;
 
-  --color-primary-rgb: 233,107,86;
+  --color-primary-rgb: 233, 107, 86;
 
   --color-primary-turquoise: #4ce1e6;
-  --color-primary-turquoise-rgb: 76,225,230;
+  --color-primary-turquoise-rgb: 76, 225, 230;
 
-   /* Secondary colors */
-   /* --color-secondary: #485664; */
-   --color-secondary-light: #8f9fae;
-   --color-secondary-dark: #3a4753;
- 
-   --color-secondary-rgb: 72, 86, 100;
-   --color-secondary-light-rgb: 143, 159, 174;
-   --color-secondary-dark-rgb: 58, 71, 83;
+  /* Secondary colors */
+  /* --color-secondary: #485664; */
+  --color-secondary-light: #8f9fae;
+  --color-secondary-dark: #3a4753;
+
+  --color-secondary-rgb: 72, 86, 100;
+  --color-secondary-light-rgb: 143, 159, 174;
+  --color-secondary-dark-rgb: 58, 71, 83;
 
   /* General colors */
   --color-blue: #0d6efd;
@@ -64,15 +66,12 @@
 
   --color-black: #000000;
   --color-black-rgb: 0, 0, 0;
-  
-  
 }
 
 /* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
 }
-
 
 /*--------------------------------------------------------------
 # General
@@ -261,13 +260,11 @@ h6 {
 }
 
 @media (max-width: 1279px) {
-
   #header .btn-getstarted,
   #header .btn-getstarted:focus {
     margin-right: 50px;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -314,7 +311,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #e96b56;
 }
 
@@ -363,11 +360,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #e96b56;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -379,7 +376,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -391,7 +388,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -412,7 +409,6 @@ h6 {
   z-index: 9999;
   right: 20px;
 } */
-
 
 .mobile-nav-toggle {
   color: #473d3a;
@@ -480,7 +476,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #e96b56;
 }
 
@@ -515,11 +511,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #e96b56;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -565,7 +561,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   /* color: #fff; */
-  color: #4ce1e6
+  color: #4ce1e6;
 }
 
 #hero h2 {
@@ -611,8 +607,7 @@ h6 {
   }
 }
 
-@media (max-width: 1024px),
-(max-height: 768px) {
+@media (max-width: 1024px), (max-height: 768px) {
   #hero {
     margin-bottom: -150px;
     height: 80vh;
@@ -704,8 +699,6 @@ h6 {
   color: #fff;
 }
 
-
-
 .hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
@@ -727,8 +720,6 @@ h6 {
 }
 
 @media (max-width: 640px) {
-
-
   .hero .btn-get-started,
   .hero .btn-watch-video {
     font-size: 14px;
@@ -765,7 +756,6 @@ section {
   margin-bottom: 0;
 }
 
-
 .section-header {
   text-align: center;
   padding-bottom: 60px;
@@ -797,7 +787,6 @@ section {
   color: #6f6f6f;
 }
 
-
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -821,11 +810,11 @@ section {
   font-size: 14px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #635551;
@@ -846,7 +835,7 @@ section {
   background: #e96b56;
   border-radius: 4px;
   /* color: #fff; */
-  color: #1E1818;
+  color: #1e1818;
 }
 
 .why-us .content h3 {
@@ -1077,7 +1066,6 @@ section {
     opacity: 0;
   }
 }
-
 
 /*--------------------------------------------------------------
 # Call To Action Section
@@ -1607,7 +1595,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1615,7 +1606,10 @@ section {
   border: 1px solid #e96b56;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #e96b56;
 }
 
@@ -1638,7 +1632,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1858,7 +1852,7 @@ section {
   list-style: none;
 }
 
-.faq .faq-list li+li {
+.faq .faq-list li + li {
   margin-top: 15px;
 }
 
@@ -1965,7 +1959,7 @@ section {
   padding: 30px;
 }
 
-.contact .php-email-form .error-message {
+.php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1974,11 +1968,11 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1987,14 +1981,14 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -2027,7 +2021,7 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #e96b56;
   border: 0;
   padding: 10px 24px;
@@ -2035,7 +2029,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #e6573f;
 }
 
@@ -2058,7 +2052,6 @@ section {
     transform: rotate(360deg);
   }
 }
-
 
 /*--------------------------------------------------------------
 # About Wi-R
@@ -2137,7 +2130,7 @@ section {
   margin: 0;
 }
 
-.blog .entry .entry-meta ul li+li {
+.blog .entry .entry-meta ul li + li {
   padding-left: 20px;
 }
 
@@ -2254,7 +2247,7 @@ section {
   display: inline-block;
 }
 
-.blog .entry .entry-footer .tags li+li::before {
+.blog .entry .entry-footer .tags li + li::before {
   padding-right: 6px;
   color: #6c757d;
   content: ",";
@@ -2473,7 +2466,7 @@ section {
   position: relative;
 }
 
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -2510,7 +2503,7 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {
+.blog .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
@@ -2529,7 +2522,7 @@ section {
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item+.post-item {
+.blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -2600,7 +2593,8 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg-touch-two.png") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/hero-bg-touch-two.png") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
@@ -2723,7 +2717,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # products Section
 --------------------------------------------------------------*/
@@ -2797,7 +2790,6 @@ section {
 .products .service-item:hover .img img {
   transform: scale(1.2);
 }
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -2902,13 +2894,13 @@ section {
   border: 1px solid #ffe2d9;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -2924,7 +2916,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #ed3b00;
 }
 
@@ -2974,7 +2966,6 @@ section {
   margin: 0;
   max-height: 80px;
 }
-
 
 /*--------------------------------------------------------------
 # Products Static Hero Section
@@ -3211,7 +3202,6 @@ section {
   color: var(--color-primary);
 }
 
-
 /*--------------------------------------------------------------
 # applications-hero Section
 --------------------------------------------------------------*/
@@ -3220,7 +3210,8 @@ section {
   height: 100vh;
   /* background: url(../img/applications/hero-bg.png) top center no-repeat; */
   /* background: url(../img/applications/metaverse-hero.jpg) top center no-repeat; */
-  background: url(../img/applications/metaverse-hero-multiply.jpg) top center no-repeat;
+  background: url(../img/applications/metaverse-hero-multiply.jpg) top center
+    no-repeat;
   background-size: cover;
 }
 
@@ -3311,7 +3302,6 @@ section {
   }
 }
 
-
 /*--------------------------------------------------------------
 # applications
 --------------------------------------------------------------*/
@@ -3356,7 +3346,6 @@ section {
 .applications .icon-box:hover h4 a {
   color: #47b2e4;
 }
-
 
 /*--------------------------------------------------------------
 # Our applications-services Section
@@ -3437,7 +3426,6 @@ section {
   border-color: var(--color-primary);
 }
 
-
 /*--------------------------------------------------------------
 # company-hero Section
 --------------------------------------------------------------*/
@@ -3447,7 +3435,8 @@ section {
   /* background: url(../img/applications/hero-bg.png) top center no-repeat; */
   /* background: url(../img/applications/metaverse-hero.jpg) top center no-repeat; */
   /* background: url(../img/company/vision_multiply.jpg) top center no-repeat; */
-  background: url(../img/company/vision_ar_crop_multiply.jpg) top center no-repeat;
+  background: url(../img/company/vision_ar_crop_multiply.jpg) top center
+    no-repeat;
   background-size: cover;
 }
 
@@ -3552,7 +3541,7 @@ section {
   font-size: 14px;
   font-weight: 700;
   /* color: #4154f1; */
-  color:var(--color-dark);
+  color: var(--color-dark);
   text-transform: uppercase;
 }
 
@@ -3560,7 +3549,7 @@ section {
   font-size: 24px;
   font-weight: 700;
   /* color: #012970; */
-  color:var(--color-default);
+  color: var(--color-default);
 }
 
 .company-about p {
@@ -3575,7 +3564,7 @@ section {
   transition: 0.5s;
   color: #fff;
   /* background: #4154f1; */
-  background:var(--color-primary);
+  background: var(--color-primary);
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
