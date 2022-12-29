@@ -79,7 +79,8 @@
             );
           }
         } else {
-          alert("Subscribed!");
+          thisForm.querySelector(".subscribeform-submitbutton").value = "Done!";
+          thisForm.querySelector(".subscribeform-submitbutton").disabled = true;
         }
       })
       .catch((error) => {
