@@ -854,13 +854,16 @@ section {
 
 .why-us .content p {
   margin-bottom: 30px;
+  color: #ada8a8;
 }
 
 .why-us .content .more-btn {
   display: inline-block;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   padding: 6px 30px 8px 30px;
-  color: #fff;
+  /* color: #fff; */
+  /* color: #373737; */
+  color: var(--color-primary);
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
 }
