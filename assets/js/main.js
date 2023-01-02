@@ -1,9 +1,4 @@
-/**
-* Template Name: Flexor - v4.9.1
-* Template URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -291,5 +286,27 @@
       mirror: false
     })
   });
+
+  /**
+   * Typewriter
+   */  
+var app = document.getElementById('typing');
+
+var typewriter = new Typewriter(app, {
+    loop: true,
+    cursor:".",
+    delay:10
+
+});
+
+typewriter.typeString('the Metaverse')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('distributed computing XR')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('all-day, real-time AI')
+    .pauseFor(2500)
+    .start();
 
 })()
