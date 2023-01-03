@@ -3471,8 +3471,8 @@ section {
   height: 100vh;
   /* background: url(../img/applications/hero-bg.png) top center no-repeat; */
   /* background: url(../img/applications/metaverse-hero.jpg) top center no-repeat; */
-  /* background: url(../img/company/vision_multiply.jpg) top center no-repeat; */
-  background: url(../img/company/vision_ar_crop_multiply.jpg) top center
+  background: url(../img/company/vision_multiply.jpg) top center no-repeat;
+  /* background: url(../img/company/vision_ar_crop_multiply.jpg) top center */
     no-repeat;
   background-size: cover;
 }
@@ -3481,10 +3481,10 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  /* color: var(--color-primary-turquoise); */
+  color: var(--color-primary-turquoise);
   /* color: var(--color-black); */
   /* color: var(--color-primary); */
-  color: var(--color-white);
+  /* color: var(--color-white); */
 }
 
 .company-hero h2 {

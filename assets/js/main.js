@@ -171,7 +171,7 @@
    */
   new Swiper('.clients-slider', {
     speed: 400,
-    loop: true,
+    loop: false,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -196,7 +196,7 @@
         spaceBetween: 80
       },
       992: {
-        slidesPerView: 6,
+        slidesPerView: 5,
         spaceBetween: 120
       }
     }
