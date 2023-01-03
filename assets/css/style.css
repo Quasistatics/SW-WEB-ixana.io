@@ -715,7 +715,8 @@ h6 {
 }
 
 .hero .btn-watch-video i {
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: var(--color-primary-turquoise);
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -723,7 +724,7 @@ h6 {
 }
 
 .hero .btn-watch-video:hover i {
-  color: #fff;
+  color: var(--color-primary-turquoise);
 }
 
 @media (max-width: 640px) {
