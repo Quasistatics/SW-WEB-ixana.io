@@ -2610,7 +2610,8 @@ section {
 --------------------------------------------------------------*/
 .call-to-action .container {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/hero-bg-touch-two.png") center center;
+    /* url("../img/hero-bg-touch-two.png") center center; */
+    url("../img/hero.gif") center center;
   background-size: cover;
   padding: 100px 60px;
   border-radius: 15px;
