@@ -3923,3 +3923,106 @@ animation: blink-caret 0.6s step-end 7 9.5s, typing 1s steps(11) 9.5s forwards;
 .upcoming_products .service-item:hover .img img {
   transform: scale(1.2);
 }
+
+
+/*--------------------------------------------------------------
+# product-pricing
+--------------------------------------------------------------*/
+.product-pricing .box {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.product-pricing .box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.product-pricing h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.product-pricing .price {
+  font-size: 36px;
+  color: #444444;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.product-pricing .price sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.product-pricing .price span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.product-pricing img {
+  padding: 30px 40px;
+}
+
+.product-pricing ul {
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.product-pricing ul li {
+  padding-bottom: 10px;
+}
+
+.product-pricing ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.product-pricing .btn-buy {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  /* color: #4154f1; */
+  color: var(--color-primary);
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  /* border: 1px solid #4154f1; */
+  border: 1px solid var(--color-primary);
+}
+
+.product-pricing .btn-buy:hover {
+  background: var(--color-primary);
+  /* background: #4154f1; */
+  color: #fff;
+}
+
+.product-pricing .featured {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #4154f1;
+  color: #fff;
+}
