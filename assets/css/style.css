@@ -21,6 +21,9 @@
   /* --color-primary-turquoise: #4ce1e6;
   --color-primary-turquoise-rgb: 76,225,230; */
 
+  --color-primary-black-p:#6f6f6f;
+  --color-primary-black-h2:#444444;
+
   --color-primary-turquoise: #00fffc;
   --color-primary-turquoise-rgb: 0, 255, 252;
 
@@ -533,7 +536,7 @@ h6 {
   width: 100%;
   height: 60vh;
   /* background: url("../img/hero-bg.jpg") center center; */
-  background: url("../img/hero-bg-touch.jpg") center center;
+  /* background: url("../img/hero-bg-touch.jpg") center center; */
 
   /* Add the blur effect
   filter: blur(8px);
@@ -4025,4 +4028,197 @@ animation: blink-caret 0.6s step-end 7 9.5s, typing 1s steps(11) 9.5s forwards;
   padding: 1px 0 3px 0;
   background: #4154f1;
   color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# new_hero Section
+--------------------------------------------------------------*/
+.new_hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/new_hero-bg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.new_hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  /* color: #012970; */
+  color: var(--color-primary-black-h2); 
+}
+
+.new_hero h2 {
+  /* color: #444444; */
+  color: var(--color-primary-black-p);
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+
+.new_hero .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  /* background: #4154f1; */
+  background: var(--color-primary);
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.new_hero .btn-get-started span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.new_hero .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.new_hero .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+
+.new_hero .new_hero-img {
+  text-align: right;
+}
+
+@media (min-width: 1024px) {
+  .new_hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 991px) {
+  .new_hero {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
+
+  .new_hero .new_hero-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .new_hero .new_hero-img img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .new_hero {
+    text-align: center;
+  }
+
+  .new_hero h1 {
+    font-size: 32px;
+  }
+
+  .new_hero h2 {
+    font-size: 24px;
+  }
+
+  .new_hero .new_hero-img img {
+    width: 100%;
+  }
+}
+
+.new_hero .btn-watch-video {
+  font-size: 16px;
+  transition: 0.5s;
+  /* margin-left: 25px; */
+  /* color: #fff; */
+  font-weight: 600;
+  margin-top : 50px;
+}
+
+.new_hero .btn-watch-video i {
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: var(--color-primary-turquoise);
+  font-size: 32px;
+  transition: 0.3s;
+  line-height: 0;
+  margin-right: 8px;
+  
+}
+
+.new_hero .btn-watch-video:hover i {
+  color: var(--color-primary-turquoise);
+}
+
+@media (max-width: 640px) {
+  .new_hero .btn-get-started,
+  .new_hero .btn-watch-video {
+    font-size: 14px;
+    text-align: center;
+    margin:auto;
+    margin-top: 30px;
+  }
+}
+
+/* #new_hero .get-started-icon {
+  font-size: 24px;
+  background: var(--color-primary);
+  padding: 14px;
+  color: #fff;
+  border-radius: 50px;
+  position: relative;
+  z-index: 5;
+  box-shadow: 10px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#new_hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: 0.5s;
+  margin-left: -10px;
+  padding: 8px 26px 8px 26px;
+  color: #fff;
+  background: #584b48;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  z-index: 4;
+} */
+
+
+/*--------------------------------------------------------------
+# new_header
+--------------------------------------------------------------*/
+.new_header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+}
+
+.new_header.new_header-scrolled {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.new_header .logo {
+  line-height: 0;
+}
+
+.new_header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+
+.new_header .logo span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #012970;
+  font-family: "Nunito", sans-serif;
+  margin-top: 3px;
 }
