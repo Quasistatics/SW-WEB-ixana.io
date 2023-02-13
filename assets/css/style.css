@@ -1108,8 +1108,8 @@ section {
 
 .cta .content h3 {
   color: var(--color-black);
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 36px;
+  font-weight: 500;
 }
 
 .cta .content h3 em {
