@@ -1967,3 +1967,113 @@ section {
     height: auto;
   }
 }
+
+/*--------------------------------------------------------------
+# Videos play-btn
+--------------------------------------------------------------*/
+
+.video-post a {
+  color: #ff5757;
+  text-decoration: none;
+}
+
+.splide .play-btn {
+  width: 94px;
+  height: 94px;
+  /* background: radial-gradient(var(--color-primary) 50%, rgba(13, 66, 255, 0.4) 52%); */
+  background: radial-gradient(
+    rgba(255, 88, 33, 0.4) 50%,
+    rgba(255, 88, 33, 0.4) 52%
+  );
+  border-radius: 50%;
+  /* display: block; */
+  /*position: absolute; */
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  /* overflow: hidden; */
+}
+
+.splide .play-btn:before {
+  content: "";
+  /* position: absolute; */
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 88, 33, 0.4);
+  top: -15%;
+  left: -15%;
+  background: rgba(255, 88, 33, 0.4);
+}
+
+.splide .play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.splide .play-btn:hover:before {
+  content: "";
+  /* position: absolute; */
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+.splide .play-btn:hover:after {
+  border-left: 15px solid #ff5757;
+  transform: scale(20);
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}

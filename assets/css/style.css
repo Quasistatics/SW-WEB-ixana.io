@@ -4496,7 +4496,11 @@ animation: blink-caret 0.6s step-end 7 9.5s, typing 1s steps(11) 9.5s forwards;
 .product-about .play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(13, 66, 255, 0.4) 52%);
+  /* background: radial-gradient(var(--color-primary) 50%, rgba(13, 66, 255, 0.4) 52%); */
+  background: radial-gradient(
+    var(--color-primary) 50%,
+    rgba(255, 88, 33, 0.4) 52%
+  );
   border-radius: 50%;
   display: block;
   position: absolute;
