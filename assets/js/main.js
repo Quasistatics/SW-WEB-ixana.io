@@ -357,3 +357,38 @@
       .start();
   }
 })();
+
+ /**
+   * Cookie
+   */
+
+if (!!getCookie('cookie-acceptance') === true){
+  document.getElementById('cookie-notice').classList.add('d-none');
+}else {
+  document.getElementById('cookie-notice').classList.remove('d-none');
+}
+
+
+document.getElementById('js-cookie-ok').addEventListener('click', function() {
+  setCookie('cookie-acceptance', true, 30);
+  document.getElementById('cookie-notice').classList.add('d-none');
+  document.getElementById('cookie-notice').classList.remove('d-block');
+})
+
+
+function setCookie(name,value,days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+    }
+    document.cookie = name + "=" + encodeURIComponent(value) + ";path=/;expires=" + date.toUTCString() + ";SameSite=None; Secure;";
+}
+
+function getCookie(name) {
+  var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+  return v ? decodeURIComponent(v[2]) : '';
+}
+function eraseCookie(name) {   
+    document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
