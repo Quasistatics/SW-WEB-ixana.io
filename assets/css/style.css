@@ -192,7 +192,15 @@
 }
 @media (max-width: 991px) {
   .wrapper {
-    right: 20px !important;
+    bottom: 60px;
+    max-width: 270px;
+    right: 10px !important;
+  }
+  .wrapper img{
+    max-width: 70px;
+  }
+  .buttons .item{
+    margin: 0 5px;
   }
 } 
 
