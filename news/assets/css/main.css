@@ -1995,7 +1995,7 @@ section {
 
 .splide .play-btn:before {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   width: 120px;
   height: 120px;
   -webkit-animation-delay: 0s;
@@ -2033,16 +2033,16 @@ section {
 
 .splide .play-btn:hover:before {
   content: "";
-  /* position: absolute; */
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border: none;
-  border-top: 10px solid transparent;
+  /* border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
+  border-left: 15px solid #fff; */
   z-index: 200;
   -webkit-animation: none;
   animation: none;
@@ -2050,6 +2050,7 @@ section {
 }
 
 .splide .play-btn:hover:after {
+  position: absolute;
   border-left: 15px solid #ff5757;
   transform: scale(10);
 }
