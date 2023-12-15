@@ -12,9 +12,11 @@
 :root {
   --color-default: #222222;
   /* --color-primary: #e96b56; */
-  --color-primary: #ff5757;
+  /* --color-primary: #ff5757; */
+  --color-primary: #FE704B;
   /* --color-secondary: #f85a40; */
-  --color-secondary: #e96b56;
+  /* --color-secondary: #e96b56; */
+  --color-secondary: #DF3724;
 
   --color-primary-rgb: 233, 107, 86;
 
@@ -4253,7 +4255,7 @@ animation: blink-caret 0.6s step-end 7 9.5s, typing 1s steps(11) 9.5s forwards;
 }
 
 .new_hero .btn-watch-video {
-  font-size: 16px;
+  font-size: 20px;
   transition: 0.5s;
   /* margin-left: 25px; */
   /* color: #fff; */
